@@ -1,5 +1,5 @@
 c = int(input('Type the amount of Fibonachi members: '))
-a = 0 
+a = -1 
 b = 1 
 e = 1
 

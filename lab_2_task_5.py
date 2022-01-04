@@ -1,14 +1,16 @@
-a = int(input('Вводите делимое: '))
-b = int(input('Вводите делитель: '))
+a = int(input('Type a dividend: '))
+b = int(input('Type a dvivsor: '))
 
-c = a / b
-print('Частное: ', c)
+d = a % b # the remainder
 
-d = a % b 
-
-if d==0:
-  print('Делится без остатка')
+if b == 0: 
+    print('There is not solution')
+elif d == 0:
+    c = a // b # the quotient
+    print(f'The remainder:{c}')
+elif a < b:
+    e = a / b # the quotient
+    print(f'The quotient:{e}')
 else:
-  print('Делится с остатком.')   
-
-print('Остаток: ', d)
+    c = a // b # the quotient
+    print(f'The quotient:{c}',f'The remainder:{d}',sep='\n')
