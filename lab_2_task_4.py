@@ -1,7 +1,12 @@
-a = int(input('Enter the number: '))
+c = int(input('Type the amount of Fibonachi members: '))
+a = 0 
+b = 1 
+e = 1
 
-while a >= 0:
-  b = (((1+5**(1/2))/2)**a - ((1-5**(1/2))/2)**a)/(5**(1/2))
-  print('b(', a, '): ', b)
-  a -= 1
-
+while e <= c:
+    d = a + b 
+    print(f'{e}:', d)
+    a = b
+    b = d
+    e += 1
+   
