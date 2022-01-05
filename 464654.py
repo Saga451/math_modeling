@@ -1,7 +1,14 @@
-a = int(input('put the first emeber: '))
-b = int(input('put the denominator: '))
-c = int(input('put the amount of members: '))
+a = int(input('Type the number which you wanna divide to simple numbers: '))
 
-while a != a * (b ** (c-1)):
-    print(a)
-    a *= b
+for b in range(2, a, 1):
+    print('\n'+f'{b}: ')
+    while b != 1:
+        for c in range(2, b+1, 1):
+            d = b % c
+            e = 1
+            while d == 0:
+                print(c,end='')
+                b //= c
+                d = b % c
+                e +=c   
+           
