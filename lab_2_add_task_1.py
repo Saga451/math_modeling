@@ -1,18 +1,18 @@
-print('y = a*x^2+b*x+c')
+print('a * (x ** 2) + b * x + c = 0') # решение квадратных уравнений
 
-a = int(input('Type the value of a: '))
-b = int(input('Type the value of b: '))
-c = int(input('Type the value of c: '))
+a = int(input('a: '))
+b = int(input('b: '))
+c = int(input('c: '))
 
-d=(b**2)-(4*a*c)
+d = (b ** 2) - 4 * a * c
+t = d ** (1/2)
 
 if d < 0:
-  print('No roots')
+    print('There is no solution')
 elif d == 0:
-  x = (-1*b)/(2*a)
-  print('x = ', x)
-else:
-  k = ((-1*b)+((d)**(1/2)))/(2*a)
-  p = ((-1*b)-((d)**(1/2)))/(2*a)
-  print('x(1) = ', k, end = '\n')  
-  print('x(2) = ', p)
+    e = -b / (2 * a) 
+    print(f'There is one solution:{e}')
+else: 
+    f = (-b + t) / (2 * a)
+    g = (-b - t) / (2 * a)
+    print(f'There is two solutions: {f} and {g}')
