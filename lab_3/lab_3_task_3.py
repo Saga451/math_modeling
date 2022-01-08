@@ -5,7 +5,7 @@ x0 = 1
 y0 = 1
 v0 = 2
 
-t = np.arange(0, 5, 0.5)
+t = np.arange(-0.5, 5.5, 0.5)
 
 x = x0 + v0 * t
 y = y0 + v0 * t - (g * t**2) / 2
@@ -13,6 +13,6 @@ y = y0 + v0 * t - (g * t**2) / 2
 a = [t, x, y]
 b = np.array(a)
 
-for d in range(1, 10, 1):
+for d in range(1, 12, 1):
  c = slice = b[::, d]
  print(c, '\n')
