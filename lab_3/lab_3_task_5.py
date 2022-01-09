@@ -1,4 +1,4 @@
-import numpy as np 
+import numpy as np # меняем местами столбцы 
 from lab_3_task_4 import *
 
 for i in range(0, N, 1):
