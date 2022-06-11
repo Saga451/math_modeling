@@ -21,3 +21,7 @@ print(slice)
 
 slice = b[1, 2::1]
 print(slice) 
+
+
+g = np.array([1, 5, 88])
+print(g)
